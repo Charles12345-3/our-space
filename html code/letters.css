@@ -1,0 +1,82 @@
+ /* Setup the background */
+        body {
+            background-color: lightpink; /* Slightly darker desk color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Each individual page */
+        .page {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            min-height: 80vh; /* Each page takes up most of the screen */
+            margin: 40px 0; /* Space between the sheets of paper */
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+            border-radius: 15px;
+            
+            /* Simple fade-in as she scrolls */
+            transition: transform 0.5s ease;
+        }
+
+        /* Page Numbering at the bottom corner */
+        .page-number {
+            position: absolute;
+            bottom: 30px;
+            right: 40px;
+            font-size: 0.8rem;
+            color: #bbb;
+            font-style: italic;
+        }
+
+        /* Title of each page */
+        .page h2 {
+            font-weight: normal;
+            font-style: italic;
+            color: #8d775f;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        /* The actual writing */
+        .letter-text {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            white-space: pre-wrap;
+        }
+
+        /* Decorative "Staple" or Clip at the top */
+        .page::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 15px;
+            background: rgba(212, 163, 115, 0.3); /* Transparent tape effect */
+            border-radius: 2px;
+        }
+
+        /* Signature on the very last page */
+        .last-page-sig {
+            margin-top: 50px;
+            text-align: right;
+            color: #d4a373;
+            font-style: italic;
+        }
+
+        /* Smooth scrolling for the whole page */
+        html {
+            scroll-behavior: smooth;
+            }

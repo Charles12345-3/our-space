@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head> 
+  <link rel="stylesheet" href="home_page.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home_page.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <audio id="bg-audio" autoplay loop> 
+    <source src="audio/cute_sounds.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const audio = document.getElementById("bg-audio");
+
+    window.addEventListener("click", () => {
+        audio.play();
+    });
+</script>
+
+
+<div class="Header">
+    <h2>Flip Cards</h2>
+</div>
+
+<div class="menu-container">
+    <button id="menuToggle" class="big-button" onclick="menu.hidden ^= 1">☰</button>
+
+    <aside id="menu" hidden>
+        <nav class="menu-links">
+            <a href="#">🏠 Home</a>
+            <a href="#">📌 Explore</a>
+            <a href="#">🔥 Trending</a>
+            <a href="#">📩 Messages</a>
+            <a href="#">⚙️ Settings</a>
+        </nav>
+    </aside>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <div class="picture1">
+            <div class="front"><img src="images/pic(pikit).jpg" alt="Front"></div>   
+            <div class="back"><img src="images/pic(yakap).jpg" alt="Back"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="picture1">
+            <div class="front"><img src="images/picnamin1.jpg" alt="Front"></div>   
+            <div class="back"><img src="images/picnamin2.jpg" alt="Back"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="picture1">
+            <div class="front"><img src="images/picnamin3.jpg" alt="Front"></div>   
+            <div class="back"><img src="images/picnamin4.jpg" alt="Back"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+
+</html>

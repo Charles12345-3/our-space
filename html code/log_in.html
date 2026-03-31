@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Our Space</title>
+    <link rel="stylesheet" href="log_in_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/heart.png">
+</head>
+
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/pinkballoonbg.mp4" type="video/mp4">
+    </video>
+    <audio id="bg-audio" autoplay loop> 
+    <source src="audio/cute_sounds.mp3" type="audio/mpeg">
+</audio>
+<script>
+    
+</script>
+    <div class="Background">
+    <!-- Hiwalay -->
+    <div class="Header">
+        <h2>Our  Space</h2>
+        <img src="images/heart.png" title="I love you" height="50">
+        <hr>
+    </div>
+    <!-- Hiwalay -->
+    <div class="border">
+    <div class="Log">
+        <h3>Log In</h3>
+    </div>
+    <!-- Hiwalay -->
+    <div class="Input">
+    <form id="loginForm">
+        <div class="username">
+        <label for="Username"> Username</label>
+        </div>
+    <input type="text" id="Username" name="Username" placeholder="Username: " required><br><br>
+        
+        <div class="password">
+        <label for="Password"> Password</label>
+        </div>
+    <input type="password" id="Password" name="Password" placeholder="Password: " required><br><br>
+    <input type="submit" id="loginSubmit" class="aesthetic-submit" value="Log In">
+    
+    </form>
+    </div>
+    </div>
+
+<script src="log_in_func.js"></script>
+
+</body>
+
+</html>

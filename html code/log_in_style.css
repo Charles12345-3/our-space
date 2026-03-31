@@ -1,0 +1,137 @@
+#bg-video {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;       
+    height: 100%;      
+    object-fit: cover; 
+    z-index: -1;       
+}
+body{
+    background-color: rgb(252, 214, 221);
+    text-align: center;
+    margin-top: 100px;
+}
+.Background{
+    font-size: 50px;
+    color: Black;
+    background-color: white;
+    display: inline-block;
+    border: 7px solid black;
+    border-radius: 5px;
+    width: 500px;
+    padding-bottom: 50px;
+}
+.Header{
+    font-size: 20px;
+    color: pink;
+    font-family: "Press Start 2P";
+    display: inline-block;
+    padding-top: 20px;
+    -webkit-text-stroke: 1px black;
+
+    
+}
+.Log{
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-bottom: 10px;
+    font-family: "Press Start 2P";
+    
+    
+        
+}
+.username{
+    margin-bottom: 10px;
+}
+.password{
+    margin-bottom: 10px;
+}
+
+.Input{
+    font-size: 15px;
+    color: black;
+    display: block;
+    font-family: "Press Start 2P";
+    padding: 20px;
+    box-sizing: border-box;
+    
+
+}
+hr{
+    border: 1px solid black;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.border{
+    background-color: pink;
+    border: 2px solid black;
+    padding-top: 20px;
+    border-radius: 5px; ;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    
+}
+input[type="text"], 
+input[type="password"] {
+    color: rgb(0, 0, 0);
+    border: 3px solid black; 
+    padding: 15px 10px; 
+    line-height: 1.5; 
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 25px;
+    border-radius: 5px; 
+    font-family: "Press Start 2P";
+    font-size: 12px;
+    height: auto; 
+    
+}
+
+input[type="submit"] {
+   
+    padding: 14px 32px;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 12px; 
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  
+   
+    color: white;
+    background: linear-gradient(135deg, #f5a6e3, #d877e3); 
+    border: 2px solid black; 
+    border-radius: 50px; 
+  
+    
+cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='pink' stroke='black' stroke-width='2'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>") 16 16, pointer !important;
+    
+    
+    box-shadow: 0 4px 15px rgba(255, 124, 207, 0.4);
+    transition: all 0.3s ease;
+  
+    
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 124, 207, 0.6);
+    filter: brightness(1.1);
+}
+
+
+input[type="submit"]:active {
+    background: #ff85a2 !important; 
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(255, 124, 207, 0.4);
+    transition: all 0.1s;
+}

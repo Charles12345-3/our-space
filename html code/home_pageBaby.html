@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head> 
+  <link rel="stylesheet" href="home_pageBaby.css">
+    <script src="home_pageBaby.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <title>Baby's Home Page</title>
+</head>
+<body>
+    <audio id="bg-audio" autoplay loop> 
+    <source src="audio/cute_sounds.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const audio = document.getElementById("bg-audio");
+
+    window.addEventListener("click", () => {
+        audio.play();
+    });
+</script>
+
+    <div class="Header">
+    <h1 id="welcome">Hello Baby, Welcome to your Space!</h1>
+        </div>
+    
+    <div class="vertical-sidebar">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    
+    <div class="side-links">
+        <a href="home.html" title="Home">🏠</a>
+        <a href="flipcards.html" title="Flipcards">✨</a>
+        <a href="memories.html" title="Memories">📸</a>
+        <a href="videos.html" title="Videos">🎬</a>
+        <a href="letters.html" title="Letters">💌</a>
+    </div>
+
+    <div class="side-bottom">
+        <button class="settings-btn">⚙️</button>
+    </div>
+</div>
+
+
+<div class="clock-container">
+    <div id="real-date">Loading Date...</div>
+    <div id="real-clock">00:00:00</div>
+</div>
+
+<div class="anniversary-box">
+    <h3 id="anniversary-title">Countdown to Our Anniversary</h3>
+    <div id="countdown-display">
+        <span id="days-left">00</span> Days Until March 25!
+    </div>
+</div>
+
+<div class="bucket-list-container">
+    <h2 class="todo-title">Our Bucket List ✨</h2>
+    
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date1">
+        <label for="date1">Picnic Date🧺</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date2">
+        <label for="date2">Museum Date 🏛️</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date3">
+        <label for="date3">Painting Date 🖌️</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date4">
+        <label for="date4">Arcade Date 🕹️</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date5">
+        <label for="date5">Buffet Date 🍽️</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date6">
+        <label for="date6">Samgyupsal Date 🥓</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date7">
+        <label for="date7">Unli Wings Date 🍗</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date8">
+        <label for="date8">Cafe Date ☕</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date9">
+        <label for="date9">Aquarium Date 🐠</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date10">
+        <label for="date10">BGC Date🏙️</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date11">
+        <label for="date11">Indoor Playground🏙️</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date12">
+        <label for="date12">Amusement Park Date 🎢</label>
+    </div>
+
+    <div class="bucket-list-item">
+        <input type="checkbox" id="date12">
+        <label for="date12">Beach Date 🏖️</label>
+    </div>
+    <!-- Add more bucket list items as needed -->
+</div>
+
+
+
+</body>
+
+
+</html>

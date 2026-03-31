@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(252, 214, 221);
+    display: block;
+    justify-content: left;  
+    align-items: left;      
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 220px;
+    height: 300px;
+    perspective: 1000px;
+    font-family: "Press Start 2P";
+    margin-left: 200px;
+    margin-top: 200px;
+    
+}
+
+.picture1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card:hover .picture1 {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 20px 50px rgb(255, 62, 139), 0px 6px 6px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.front img, .back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+.card {
+    width: 220px;
+    height: 300px;
+    perspective: 1000px;
+    font-family: "Press Start 2P";
+
+    margin: 10px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    width: 100%;
+    position: relative; /* Keeps container logic stable */
+}
+.picture1 {
+    flex-wrap: wrap;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+@media (max-width: 1000px) {
+    .card {
+        width: 150px;
+        height: 220px;
+    }
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 17ch; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+
+.Header {
+    width: fit-content;      /* Only as wide as the text */
+    margin: 50px auto;       /* Centers the header and adds space below it */
+    font-family: "Press Start 2P";
+    font-size: 30px;
+    border-right: 4px solid; /* The cursor for typing */
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /* The Typing Animation */
+    animation: 
+        typing 3.5s steps(10) infinite,
+        blink-caret 0.75s step-end infinite;
+}
+
+
+
+/* Container to pin everything to the top-left */
+.menu-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Keeps it above the flip cards */
+}
+
+.big-button {
+    background-color: #000000; /* Pure Black */
+    color: white;
+    border: none;
+    width: 65px;  /* Made it bigger */
+    height: 65px; /* Made it bigger */
+    border-radius: 15px;
+    font-size: 28px; /* Larger icon */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, background 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.big-button:hover {
+    background-color: #222;
+    transform: scale(1.05); /* Slight pop effect on hover */
+}
+
+/* Updated floating menu position */
+#menu {
+    margin-top: 15px;
+    width: 250px;
+    background: white;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    /* No need for position: absolute here if the container is fixed */
+}
+
+#menu[hidden] {
+    display: none !important;
+}
+/* Navigation link styling - Updated for vertical list */
+.menu-links a {
+    display: flex;         /* Allows emoji and text to sit nicely */
+    align-items: center;
+    text-decoration: none; /* Removes the blue underline */
+    color: #333;           /* Dark grey text color */
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: background 0.2s;
+    margin-bottom: 5px;
+    
+    /* This ensures each link starts on a new line */
+    width: auto; 
+    display: block; 
+}
+
+/* The hover effect to match your goal */
+.menu-links a:hover {
+    background-color: #f0f2f5;
+    color: #000; /* Optional: make text darker on hover */
+}
